@@ -49,4 +49,8 @@ public class Vehicle{
     public double getPrice(){
         return this.price;
     }
+
+    public int getSeats(){
+        return this.seats;
+    }
 }

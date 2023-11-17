@@ -17,8 +17,10 @@ public class Van extends Vehicle{
         this.final_price = base_price*(cube/2);
         return this.final_price;    
     }
-    public static void main(String[] args) {
-        Van v = new Van(null, null, 20000, 8,10);
-        System.out.println(v.final_price);
+
+    public String toString(){
+        String s ="Marca: "+this.getBrand()+". Modelo: "+this.getModel()+". Precio base: "+this.getBasePrice()+". Precio final: "+this.getPrice()+". Capacidad: "+this.capacity+". Plazas: "+this.getSeats(); 
+        return s;
     }
+
 }
